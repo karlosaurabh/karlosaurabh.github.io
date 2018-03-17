@@ -1,3 +1,4 @@
+/* ==============COMMON CSS START FROM HERE ====================== */
 :root{font-size: 16px; color:black; font-family: sans-serif;}
 a{text-decoration: none;}
 body,html{padding:0px;margin: 0px;}
@@ -5,8 +6,8 @@ body,html{padding:0px;margin: 0px;}
 .btn:hover{color:wheat; border-radius:0 1rem; transition: 0.2s ease-in;}
 .row{display: flex;}
 .boxCont{ box-shadow: 0 6px 21px 0px rgba(0,0,0,0.2);padding:15px;}
-
-
+.clearfix{clear:both;}
+ 
 /* ============== HEADER PORTION START FROM HERE ===================== */
 .header_cont{background:#08263c;}
 .header_cont li:hover a{ color:#d54d18; transition:0.4s ease-in;}
@@ -27,7 +28,7 @@ nav ul li a{ padding:0 5px;}
 .personDetails p::first-letter{font-size: 2rem; font-weight: bold; }
 .colorTxt{color: #18ba60;}
 #toggle{color:white; font-size: 2rem; margin-top:1.5rem; cursor:pointer;}
-
+.address li{display:block;}
 /* ============== ABOUT US PORTION START FROM HERE ===================== */
 .aboutUs{display: flex;}
 .personImg{ flex: 30%;}
@@ -54,6 +55,55 @@ h1.headingTxt:before{border-bottom: 2px solid #000; width: 160px; content: ""; p
 .subTitle{display: block; background: #18A9D5; color:black; position: absolute; bottom:0px; width: 100%; text-align:center; height:0px; transition:0.4s ease-in; overflow: hidden; transform: scale(0,0)}
 .subTitle p{ color: white; font-size: 1.5rem;}
 .portfolioCont .items:hover .subTitle{display: block; background: rgba(10,190,179,0.9); color:black; height: 100%; transition:0.4s ease-in; transform: scale(1,1)}
+.iteme_re{position:relative; }
+.ribbon {  
+	position: absolute;  
+	top: -26px;
+   
+    display: inline-block;
+    font-size: 21px;
+    width: 190px;        
+    padding: 6px 0px;
+	text-align: center;
+    margin-left: -30px;
+    color: #fff ;
+    background: #C9000B ;
+    -webkit-box-shadow: 3px 2px 4px rgba(0,0,0,.5);
+    -moz-box-shadow: 3px 2px 4px rgba(0,0,0,.5);
+    box-shadow: 3px 2px 4px rgba(0,0,0,.5);}  
+.ribbon:before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 100%;
+    border-width: 5px 10px;
+    border-style: solid;
+   /* border-color: #470000 #470000 transparent transparent;*/
+	border-color: #470000  #470000 transparent transparent;
+}
+.ribbon:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -10px;
+    top: 0;
+    border-width: 10px 5px;
+    border-style: solid;
+    border-color: #C9000B transparent transparent #C9000B  ;
+}
+.ribbon b {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -10px;
+    bottom: 0;
+    border-width: 10px 5px;
+    border-style: solid;
+	border-color:  transparent transparent #C9000B #C9000B ;
+}
 
 
 /* ============== MEDIA PORTION START FROM HERE ===================== */
@@ -77,8 +127,8 @@ footer p{color:whitesmoke; margin: 0px;}
 /* ============== MEDIA PORTION START FROM HERE ===================== */
 
 @media (max-width:768px){
-
-	.logoProtion img{width: 60%;}
+	.logoProtion{width:100%; }
+	.logoProtion img{width: 100px; margin-top:20px;}
 	
 	nav ul#hideData{ float:left; padding-left: 0px;}
 	nav ul#hideData li{width: 100%;padding: 0.3rem 0rem;}
