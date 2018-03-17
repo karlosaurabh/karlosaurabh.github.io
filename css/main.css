@@ -1,372 +1,106 @@
-/* CSS Document */
-
-/* ===========================================
-	**********		COMMON CSS   ************
-============================================= */
-html , body{padding:0px; margin:0px;}
-#white_bg{background:#fff !important;}
-
-#top_bar {background:#fff url(../images/flag.jpg) no-repeat left center; padding:0; border-bottom:1px solid #333;}
+:root{font-size: 16px; color:black; font-family: sans-serif;}
+a{text-decoration: none;}
+body,html{padding:0px;margin: 0px;}
+.btn{padding:0.6rem 1rem; background: #08263c; color:white;border-radius: 1rem 0; transition:0.2s; display: inline-block;}
+.btn:hover{color:wheat; border-radius:0 1rem; transition: 0.2s ease-in;}
+.row{display: flex;}
+.boxCont{ box-shadow: 0 6px 21px 0px rgba(0,0,0,0.2);padding:15px;}
 
 
-#top_bar #textresizer{margin-bottom:0px;}
-#top_bar .time{color:#333333; font-size:13px;}
-#top_bar ul {  text-align: right; }
-#top_bar li {
-  border-right: 1px solid #ccc;
-  display: inline-block !important;
-  font-size: 13px;
-  list-style-type: none;
-  padding-left: 6px;
-  padding-right: 6px;
-  text-align: right;
-}
-#top_bar li.last{border-right: none;}
+/* ============== HEADER PORTION START FROM HERE ===================== */
+.header_cont{background:#08263c;}
+.header_cont li:hover a{ color:#d54d18; transition:0.4s ease-in;}
+.container{width: 95%; margin: 0 auto; padding:15px; clear: both;}
+header{background:url(../images/main-bg.jpg) no-repeat top center; background-color: rgba(0,0,0,0.4);  background-attachment: fixed; height: 41rem; width: 100%;}
+nav{clear: both; display: inline-block; width: 100%;}
+.logoProtion{   float:left; }
+.logoProtion img{width:60%;}
+nav ul {float:right;}
+nav ul li{  padding: 0.3rem 0.6rem; list-style: none; display: inline-block;}
+nav ul li a{  font-size: 1.2rem; color: whitesmoke}
+nav ul li a{ padding:0 5px;}
+.toggleButton{display: none;}
+.midleTxt{display: flex; flex-flow: row wrap; align-items: center; text-align:center; justify-content: center; min-height:34rem; background:rgba(69, 69, 69, 0.4);}
+.midleTxt h1{font-size:4rem; color:#08263c; margin:0px;}
+.midleTxt h2{font-size:3rem; color:#d54d18;  margin:0px;}
+.personDetails p{margin-top:0px; text-align: justify;}
+.personDetails p::first-letter{font-size: 2rem; font-weight: bold; }
+.colorTxt{color: #18ba60;}
+#toggle{color:white; font-size: 2rem; margin-top:1.5rem; cursor:pointer;}
 
-#top_bar li a{  color:#333333;}
-
-/* ===========================================
-	**********	HEADER TOP BAR   ************
-============================================= */
-#nav li:hover a {
-  color: #CC0000 !important;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  padding: 10px 0 9px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.leaders .ak {
-  background-color: #ccc;
-  color: #fff;
-}
-.leaders .well {
-  border: 0 none;
-  border-radius: 0;
-  padding: 1px 6px;
-  text-align: center;
-}
-.leaders .btn {
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  color: #fff;
-}
-.leaders .img-circle {
-  border: 3px solid rgba(255, 255, 255, 0.5);
-}
-.leaders .img-circle {
-  border: 3px solid rgba(255, 255, 255, 0.5);
-}
-
-.leaders .md {
-  background-color: #FF8355;
-  color: #fff;
-}
-/*============================ ===================
-================= TESTIMONIAL BLOCK ===================
-/*============================  ===================*/
-.testimonial_cont{background: url(../images/testimonial.jpg) no-repeat bottom right; background-size:cover; height:350px; margin-bottom:20px;}
-
-/*============================ ===================
-================= ISOTOPES BLOCK ===================
-/*============================  ===================*/
-.iranian_flim img{width:100%; transition:.5s ease-in;}
-.iranian_flim .over_txt{overflow:hidden; transition:.5s ease-in;}
-.iranian_flim .over_txt:hover img{ transform: scale(1.1,1.1); transition:.5s ease-out; }
-/*.iranian.iranian_flim_flim .main_over {position:relative;}
-.iranian_flim .over_txt{ position:absolute; top:0px; left:15px; width:100%;}
-.iranian_flim .main_over:hover .over_txt{position:absolute; top:0px; left:15px; width:100%; height:100%; background:rgba(0,0,0,0.5);}*/
-
-/*============================ ===================
-================= NEWS BLOCK ===================
-/*============================  ===================*/
-.panel_heading{background:#EF5350; border-bottom:4px solid #850D04; padding:10px;}
-.panel_heading:hover{ border-bottom:4px solid #850D04;}
-.panel_heading h4{font-family:"Lobster",cursive !important; color:#fff; font-size:20px; margin-bottom:0px;}
-.map_block, .recent_block , .news_block{ border:1px solid #ccc; margin-bottom:15px;}
-.panel_body{padding:4px; /*height:275px;*/}
-.notice_body{padding:4px; height:340px !important;}
-
-/*================ small slider =================== */
-	.bdr_box{ position:relative;}
-
-	/*.bdr_box .prev{position:absolute; top:115px; right:22px; border:1px solid #ccc; padding:5px;}
-
-	.bdr_box .next{position:absolute; top:115px; right:50px; border:1px solid #ccc; padding:5px;}
-*/
-	.caroufredsel_wrapper{height:250px !important;}
+/* ============== ABOUT US PORTION START FROM HERE ===================== */
+.aboutUs{display: flex;}
+.personImg{ flex: 30%;}
+.personDetails{flex:70%;  padding:1rem;}
+.personDetails p{color:#333; }
+.social_link{display: flex; margin-bottom: 1rem;}
+.social_link a{margin: 5px;	border: 1px solid #000;	border-radius: 50%;	width: 25px;height: 25px;text-align: center;
+	padding: 8px;	font-size: 20px; color:#000;}
+h1.headingTxt{position: relative;}
+h1.headingTxt:after{border-bottom: 2px solid #409b2e; width: 205px; content: ""; position: absolute; bottom: -7px; left:0px; content: "";}
+h1.headingTxt:before{border-bottom: 2px solid #000; width: 160px; content: ""; position: absolute; bottom: 0px; content: "";}
 
 
-	#foo2 li , #f001 li , #f003 li {  background: #f1f1f1;  border-bottom: 1px solid #ccc;  padding:5px 10px; margin: 5px 0; color:#00003c;}
-
-	.news_date {color:#00CC33}
-
-	.my_index_slider img{width:43%;}
-
-	.pager{display:none;}
-	.notice_body{overflow:hidden;}
-	.list_carousel {  cursor: move; }
+/* ============== HOBBIES PORTION START FROM HERE ===================== */
+.hobbiesCont{margin-top:3rem; display: flex;}
+.hobbiesCont a{ border:1px solid #08263c;padding:23px 10px; text-align: center; flex: 30%; text-transform: uppercase; margin:0rem 1rem; color:#18ba60; border-radius: 1rem 0;}
+.hobbiesCont a .fab{color:black !important;}
 
 
-/*============================ ===================
-================= important links BLOCK ===================
-/*============================  ===================*/
-#top_brand {padding:10px; cursor:move;}
-#top_brand .item {
-  border: 1px solid #c9c9c9;
-  float: left;
-  height: 80px;
-  margin: 0 5px;
-  padding: 10px 0;
-  width: 255px;
-}
-#slider_portion .owl-controls .owl-buttons .owl-prev {
-  background: transparent url("../images/rightarrows.png") no-repeat scroll 0 0;
-  height: 33px;
-  left: 0px;
-  margin-right: 40px;
-  position: absolute;
-  top: 50%;
-  width: 33px;
-  z-index: 10000000;
-}
-#slider_portion .item img{height:500px;}
-#slider_portion .owl-controls .owl-buttons .owl-next {
-  background: transparent url("../images/leftarrows.png") no-repeat scroll 0 0;
-  height: 33px;
-  margin-right: 40px;
-  position: absolute;
-  right: -32px;
-  top: 50%;
-  width: 33px;
-  z-index: 1000000;
-}
-.imp_links .owl-controls .owl-buttons .owl-prev {
-  background: transparent url("../images/rightarrow.png") no-repeat scroll 0 0;
-  height: 33px;
-  margin-right: 40px;
-  position: absolute;
-  left: -21px;
-  top: 40px;
-  width: 33px;
-}
-.imp_links .owl-controls .owl-buttons .owl-next {
-  background: transparent url("../images/leftarrow.png") no-repeat scroll 0 0;
-  height: 33px;
-  margin-right: 40px;
-  position: absolute;
-  right: -64px;
-  top: 40px;
-  width: 33px;
-}
-.map_block .panel_body{height:257px}
+/* ============== PORTFOLIO PORTION START FROM HERE ===================== */
+.portfolioCont{ display: flex;}
+.portfolioCont .items{border:1px solid wheat; padding: 5px; margin: 5px; flex: 30%; position: relative;}
+.portfolioCont .items img{width: 100%;}
+.subTitle{display: block; background: #18A9D5; color:black; position: absolute; bottom:0px; width: 100%; text-align:center; height:0px; transition:0.4s ease-in; overflow: hidden; transform: scale(0,0)}
+.subTitle p{ color: white; font-size: 1.5rem;}
+.portfolioCont .items:hover .subTitle{display: block; background: rgba(10,190,179,0.9); color:black; height: 100%; transition:0.4s ease-in; transform: scale(1,1)}
 
-/*============================ ===================
-================= NOTICE BLOCK ===================
-/*============================  ===================*/
-.imp-notice {  background-color: rgba(0, 0, 0, 0.6);   color: #fff;    display: flex;   position: absolute;   top: 0px;   width: 97%;   z-index: 10; }
 
-.imp-notice-heading {
-  background-color: #c00;
-  color: #fff;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-  width:100px;
-  font-size:14px;
-}
-.imp-notice-content {
-  flex: 1 1 0;
-  padding: 8px;
+/* ============== MEDIA PORTION START FROM HERE ===================== */
+footer{background:#08263c; font-size: 1.2rem; text-align: center; padding: 1rem;}
+footer p{color:whitesmoke; margin: 0px;}
+
+
+
+/* ============== PASTCOMPANY PORTION START FROM HERE ===================== */
+.pastCompanyCont{display: flex;}
+.pastCompanyCont .items{border:1px solid wheat; padding: 10px; flex: 30%; margin: 10px;}
+.pastCompanyCont ul{margin-left:0px; padding-left: 0px;}
+.pastCompanyCont ul li{list-style: none;}
+
+/* ============== PASTCOMPANY PORTION START FROM HERE ===================== */
+.resumeCont{background: url(../images/bg1.jpg) no-repeat fixed; height: 300px; background-size: cover; display: flex; flex-flow: row wrap; align-items: center;  justify-content: center;}
+.resumeCont a{background: #d54d18; padding: 10px 15px; border-radius: 20px;   border-radius: 50px;   color: #fff;
+    display: block; padding: 15px 0;  text-align: center;  text-decoration: none;  width: 199px; margin-left: auto;  margin-right: auto;
 }
 
-/*============================ ===================
-================= ABOUT DFF BLOCK ===================
-/*============================  ===================*/
-#main_content{background:url(../images/bg1d.jpg) no-repeat top center / cover; padding:15px; background-attachment:fixed;}
-.latest_block{margin-top:15px;}
-.about_us{background:#f1f1f1;border:1px solid #f1f1f1; padding:15px;}
-.about_section .panel-heading {
-    background-color: #ffbf0a;
-    border-color: #ffbf0a;
-    color: #fff;
-    font-size: 25px;
-    padding: 7px 15px;
-    height: auto;
-    overflow: hidden;
-    font-family: 'Lobster', cursive;
-    text-align: left;
-    height: auto;
-    overflow: hidden;
-	border-bottom:4px solid #850D04;
-}
-.about_section .imp_links  {background-color: #9575CD;
-    border-color: #ffbf0a;
-    color: #fff;
-    font-size: 25px;
-    padding: 7px 15px;
-    height: auto;
-    overflow: hidden;
-    font-family: 'Lobster', cursive;
-    text-align: left;
-    height: auto;
-    overflow: hidden;
-}
-.other-link {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-align: left;
-}
-.other-link li a {
-    display: block;
-    background-color: #ededed;
-    margin: 6px 0px;
-    padding: 10px 10px 10px 0px;
-    color: #000;
-    text-decoration: none;
-    transition-duration: .3s;
-	text-transform:uppercase;
-}
-.other-link li a:before {
-    font-family: 'FontAwesome';
-    content: "\f054";
-    font-size: 12px;
-    padding: 13px;
-    background-color: #dee0a8;
-    margin: 0px 10px 0px 0px;
-    color: #000;
-}
-.other-link li a {
-    margin: 3px 0px 6px 0px !important;
-}
-.other-link li a:hover::before {
-  background-color: #bcc213;
-  color: #fff;
-}
-.other-link li a::before {
-  background-color: #dee0a8;
-  color: #000;
-  content: "\f054";
-  font-family: "FontAwesome";
-  font-size: 12px;
-  margin: 0 10px 0 0;
-  padding: 13px;
-}
-/*============================ ===================
-================= NEWS BLOCK ===================
-/*============================  ===================*/
+/* ============== MEDIA PORTION START FROM HERE ===================== */
 
-.caroufredsel_wrapper{overflow:inherit !important; height:330px;}
+@media (max-width:768px){
 
-.prev {
-  position: absolute;
-  top: 18px;
-  right: 31px;
-}
-.next{position: absolute;
-  top: 18px;
-  right: 48px;}
-#view_page {
-  position: absolute;
-  right: 73px;
-  top: 13px;
-  color: #fff;
-  font-size: 16px;
-}
-
-
-/*=========================================*/
-/* 5.NICE SCROLLER */
-/*=========================================*/
-.nicescroll-rails div {   background: none repeat scroll 0 0 #850D04 !important; }
-.footer_bock{margin:15px 0;}
-/*============================ ===================
-================= FOOTER PORTION ===================
-/*============================  ===================*/
-.footer_cont{position:relative;}
-.footer_cont .pm{width:100%; height:100%;}
-.imp_link_txt li a{color:#000; font-size:15px; display:block; transition:.5s ease-out;}
-.imp_link_txt li:hover a{ color:#fff; transition:.5s ease-in;}
-.imp_link_txt li{background:rgba(225,225,225,0.6); margin:5px 0; padding:0 15px; border-radius:5px; display:inline-block;}
-.footer_cont{background: url(../images/footer_bg.png) no-repeat top center / cover; border-top:3px solid #D3525C; height:250px;}
- .footer_search_form a {
-  background: #AD2A2A ;
-  border: medium none;
-  color: #ffffff;
-  font-family: ptsans-regular;
-  font-size: 13px;
-  padding: 7px 13px;
-}
-.imp_link_txt.social_links li a{color:#fff;}
-.imp_link_txt li.fb{background:#3b5998; margin:5px 0; padding:0 15px; border-radius:5px; }
-.imp_link_txt li.tw{background:#55ACEE; margin:5px 0; padding:0 15px; border-radius:5px; }
-.imp_link_txt li.you_tube{background:#BB0000; margin:5px 0; padding:0 15px; border-radius:5px;}
-.imp_link_txt li.goole{background:#DD4B39; margin:5px 0; padding:0 15px; border-radius:5px; }
-.imp_link_txt li.inl{background:#007BB6; margin:5px 0; padding:0 15px; border-radius:5px; }
-.contact_txt_footer{color:#fff; font-size:13px;}
-.vistor_txt{color:#fff; margin-top:10px; font-size:14px;}
-.footer_cont .form-control {   padding:6px !important; font-size:13px; }
-.copy_right{position:absolute; bottom:0px; width:100%; border-top:1px solid rgba(225,225,225,0.6); padding-top:20px;}
-.copy_right p{color:#fff;}
-.copy_right .designed_right{text-align:right;}
-.footer_bock .panel_heading {  padding: 6px 10px !important;}
-.footer_bock .recent_block {border:1px solid #931919 !important;}
-.footer_bock .panel_heading h4 {   color: #fff !important;}
-.footer_bock .panel_heading {  background: rgba(241,198,52,0.6);  border-bottom: 4px solid rgb(241,198,52);}
-.footer_bock .panel_body{background:rgba(255,255,255,0.6);}
-
-/*============================ ===================
-================= MEDIA QUIERY ===================
-/*============================  ===================*/
-@media (min-width:1200px)
-{	
-.panel_body{padding:4px; height:119px;}
-}
-
-
-
-@media(min-width:992px) and (max-width:1199px) {
-	.panel_body{padding:4px; height:119px;}
-}
-
-@media(min-width:768px) and (max-width:991px) {
+	.logoProtion img{width: 60%;}
 	
-.main_content_block .box{margin-top:15px;}
-
+	nav ul#hideData{ float:left; padding-left: 0px;}
+	nav ul#hideData li{width: 100%;padding: 0.3rem 0rem;}
+	.toggleButton{display: block;  float:right;}
+	.midleTxt h1{text-align: center; font-size:3rem; color:#08263c;}
+	.midleTxt h2{text-align: center; font-size:2rem; color:#2e902b;}
+	
+	.container{ padding:0.3rem; clear: both;}
+	.personImg{flex-direction: column; flex: 100%;}
+	.personDetails{flex-direction: column; flex: 100%; padding:0rem;}
+	.aboutUs{display: flex;    flex-wrap: wrap;}
+	.hobbiesCont{flex-direction: column; }
+	.hobbiesCont a{ flex: 100%;}
+	.hobbiesCont a{ margin:1rem 0rem;}
+	.portfolioCont{ display: flex; flex-direction: column; }
+	.portfolioCont .items{flex:100%;}
+	.pastCompanyCont{display: flex; flex-direction: column;}
+	.pastCompanyCont .items{flex: 100%;}
+	
 }
 
-@media(max-width:767px) {
-
-.footer_cont{background: url("../images/testimonial.jpg") no-repeat scroll right bottom / cover ; border-top:10px solid #D3525C; height:auto;}
-#slider_portion .owl-controls.clickable{ display: none !important;}
-.copy_right {   position: static;  width: 100%;}
-.copy_right .designed_right {  text-align: center; }
- }
- 
-@media(min-width:320px) and (max-width:480px) {
-#slider_portion .owl-controls.clickable{ display: none !important;}
-	
-	} 
-	/*============================ ===================
-================= CLIENT  PORTION ===================
-/*============================  ===================*/
-#slider_portion{z-index:1;}
- .submenu{z-index:100000;}
-.nav-inner ul.level0{background:rgba{0,0,0,0.7 !important;}
- /*============================ ===================
-================= HOW DOES IT WORK PORTION ===================
-/*============================  ===================*/
-#top_bar{margin-bottom:20px;}
-#top_bar .top_left{background:#cae3d0;  text-align:center;border-radius:0 0 50px 0;  border:1px solid #96c8a2; padding:6px 0;}
-#top_bar .top_right{background:#cae3d0;   text-align:center;border-radius:0 0 0 50px ;  border:1px solid #96c8a2;padding:6px 0;}
-a.search_btn{background:#96c8a2; padding:5px 10px;}
-a.search_btn i{color:#fff; }
-
-a.main_heading{background:#96c8a2; text-align:center; padding:15px !important; display:block; color:#fff !important;}
-
-li.parent:hover a.main_heading{background:#926e88;color:#fff !important; }
-ul.level1 li{text-align:center;}
-ul.level13 ul.level1 li.level12{text-align:center; border-bottom:1px solid #333;}
+@media (max-width:767px){
+	.midleTxt {	min-height: 20rem;
+	}
+}
